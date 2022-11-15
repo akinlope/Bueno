@@ -5,8 +5,8 @@ const Navbar = () => {
   return (
     <nav className="px-6 md:px-12 py-6 w-screen">
       <div className="flex justify-between items-center">
-        <div className="flex bg-slate-400">
-          <img className="w-20 h-14" src={logo} alt="" />
+        <div className="flex items-center">
+          <img className="w-20" src={logo} alt="logo" />
           <h1 className="pt-4 pl-2 text-priGreen font-extrabold text-xl">
             Bueno
           </h1>
