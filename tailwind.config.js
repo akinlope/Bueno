@@ -24,6 +24,9 @@ module.exports = {
       boxShadow: {
         "3xl": "0px 5px 15px rgba(0, 0, 0, 0.35) ",
       },
+      borderRadius: {
+        'curve': '2.4rem',
+      }
     },
   },
   plugins: [],
