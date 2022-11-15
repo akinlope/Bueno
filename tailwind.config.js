@@ -15,7 +15,7 @@ module.exports = {
       secBlack: "#121d28",
       pureBlack: "#000000",
       priBlue: "#acdaee",
-      secBlue: "209bd0",
+      secBlue: "#209bd0",
       pureBlue: "#213347",
       priBrown: "#707070",
       pureWhite: "#ffffff",
