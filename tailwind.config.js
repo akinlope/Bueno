@@ -9,6 +9,7 @@ module.exports = {
       xl: "14440px",
     },
     colors: {
+      danger: "#ee4444",
       priGreen: "#7ea33e",
       priGray: "#858f9a",
       priBlack: "#15222f",
