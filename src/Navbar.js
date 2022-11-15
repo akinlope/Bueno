@@ -37,7 +37,6 @@ const Navbar = () => {
             <BsSearch className="mr-3" />
             Search
           </button>
-          {/* <input type="text" placeholder="search" className="placeholder-pureWhite p-4 bg-priGreen h-10 mt-3 rounded-md border border-priGray outline-priGray border-solid" /> */}
           <div className="relative bg-pureBlue p-3 rounded-tr-lg rounded-tl-xl rounded-bl-2xl rounded-br-curve cursor-pointer">
             <MdOutlineShoppingCart className="text-pureWhite text-2xl" />
             <span className="bg-danger text-pureWhite rounded-full  text-center top-0.5 right-1 text-xs px-1.5 py-0.5 absolute">3</span>
