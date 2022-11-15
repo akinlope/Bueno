@@ -12,14 +12,14 @@ const Navbar = () => {
           </h1>
         </div>
 
-        <div className="flex space-x-4 pt-4">
+        <div className="flex items-center space-x-6 pt-4">
           <a className="text-priBlack font-bold" href="/">
             Home
           </a>
-          <a href="/">Menu</a>
-          <a href="/">Service</a>
-          <a href="/">Shop</a>
-          <a href="/">Category</a>
+          <a href="/" className="hover:text-priGreen">Menu</a>
+          <a href="/" className="hover:text-priGreen">Service</a>
+          <a href="/" className="hover:text-priGreen">Shop</a>
+          <a href="/" className="hover:text-priGreen">Category</a>
         </div>
 
         <div className="flex space-x-5  ">
