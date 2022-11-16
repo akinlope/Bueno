@@ -27,6 +27,13 @@ module.exports = {
       },
       borderRadius: {
         'curve': '2.4rem',
+      },
+      minHeight: {
+        'hero': '550px',
+      },
+      spacing: {
+        'leafUp': '-70px',
+        'leafRight': '-50px',
       }
     },
   },
