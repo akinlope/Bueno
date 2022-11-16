@@ -6,19 +6,19 @@ import {HiOutlineMenuAlt2} from "react-icons/hi"
 
 const Navbar = () => {
   return (
-    <nav className="px-3 md:px-6 md:px-12 py-6 w-screen relative">
+    <nav className="px-3 md:px-6 lg:px-12 py-6 w-screen relative">
       <div className="flex justify-between items-center">
         <div className="md:hidden">
           <HiOutlineMenuAlt2 className="text-pureBlue text-3xl font-medium cursor-pointer" />
         </div>
         <div className="flex items-center">
           <img className="w-12 md:w-14 lg:w-20" src={logo} alt="logo" />
-          <h1 className="md:pt-4 pl-2 text-priGreen font-bold lg:font-extrabold text-base md:text-xl">
+          <h1 className="md:pt-2 pl-2 text-priGreen font-bold lg:font-extrabold text-base md:text-xl">
             Bueno
           </h1>
         </div>
 
-        <div className="hidden md:flex items-center md:space-x-6 pt-4">
+        <div className="hidden md:flex items-center md:space-x-6 pt-2">
           <a className="text-priBlack font-bold" href="/">
             Home
           </a>
