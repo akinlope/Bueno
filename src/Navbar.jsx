@@ -2,9 +2,12 @@
 import logo from "./img/logo.png";
 import { BsSearch } from "react-icons/bs";
 import { MdOutlineShoppingCart } from "react-icons/md";
-import {HiOutlineMenuAlt2} from "react-icons/hi"
+import { HiOutlineMenuAlt2 } from "react-icons/hi";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [activeLink, setActiveLink] = useState("home");
   return (
     <nav className="px-3 md:px-6 lg:px-12 py-6 w-screen relative">
       <div className="flex justify-between items-center">
@@ -19,21 +22,51 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex items-center md:space-x-6 pt-2">
-          <a className="text-priBlack font-bold" href="/">
+          <Link
+            to={"/"}
+            className={`text-priBlack ${
+              activeLink === "home" ? "font-bold" : "hover:text-priGreen"
+            }`}
+            onClick={() => setActiveLink("home")}
+          >
             Home
-          </a>
-          <a href="/" className="hover:text-priGreen">
+          </Link>
+          <Link
+            to={"/menu"}
+            className={`${
+              activeLink === "menu" ? "font-bold" : "hover:text-priGreen"
+            }`}
+            onClick={() => setActiveLink("menu")}
+          >
             Menu
-          </a>
-          <a href="/" className="hover:text-priGreen">
+          </Link>
+          <Link
+            to={"/service"}
+            className={`text-priBlack ${
+              activeLink === "service" ? "font-bold" : "hover:text-priGreen"
+            }`}
+            onClick={() => setActiveLink("service")}
+          >
             Service
-          </a>
-          <a href="/" className="hover:text-priGreen">
+          </Link>
+          <Link
+            to={"/shop"}
+            className={`text-priBlack ${
+              activeLink === "shop" ? "font-bold" : "hover:text-priGreen"
+            }`}
+            onClick={() => setActiveLink("shop")}
+          >
             Shop
-          </a>
-          <a href="/" className="hover:text-priGreen">
+          </Link>
+          <Link
+            to={"/category"}
+            className={`text-priBlack ${
+              activeLink === "category" ? "font-bold" : "hover:text-priGreen"
+            }`}
+            onClick={() => setActiveLink("category")}
+          >
             Category
-          </a>
+          </Link>
         </div>
 
         <div className="flex items-center md:space-x-4 lg:space-x-6">
@@ -43,7 +76,9 @@ const Navbar = () => {
           </button>
           <div className="relative bg-pureBlue p-2 lg:p-3 rounded-tr-lg rounded-tl-xl rounded-bl-2xl rounded-br-curve cursor-pointer">
             <MdOutlineShoppingCart className="text-pureWhite md:text-lg lg:text-xl md:text-2xl" />
-            <span className="bg-danger text-pureWhite rounded-full text-center top-0.5 right-1 text-xs px-1 lg:px-1.5 lg:py-0.5 absolute">3</span>
+            <span className="bg-danger text-pureWhite rounded-full text-center top-0.5 right-1 text-xs px-1 lg:px-1.5 lg:py-0.5 absolute">
+              3
+            </span>
           </div>
         </div>
       </div>
