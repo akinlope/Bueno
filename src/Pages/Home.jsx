@@ -6,8 +6,8 @@ import hotSpicy from "../img/hot-spicy.jpg"
 
 const Home = () => {
   return (
-    <div className="w-screen">
-      <div className="flex items-center min-h-hero px-12">
+    <div className="w-screen px-12">
+      <div className="flex items-center min-h-hero">
         <div className=" w-6/12">
           <p className="text-7xl font-extrabold text-priBlack">Fastest</p>
           <div className="flex space-x-4">
