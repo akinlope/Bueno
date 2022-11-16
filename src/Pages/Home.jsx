@@ -48,6 +48,7 @@ const Home = () => {
         </div>
       </div>
 
+      {/* ====== This line below is causing overflow-x, try fix it =====  */}
       {/* <div className="ml-32 mt-20">
         <p className="text-priGreen font-bold text-lg">Chef's special</p> */}
         {/* For the Cards */}
