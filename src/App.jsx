@@ -1,6 +1,7 @@
 import Home from "./Pages/Home";
 import Navbar from "./Navbar";
 
+
 function App() {
   return (
     <div className="App">
