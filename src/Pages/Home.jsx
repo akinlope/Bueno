@@ -2,7 +2,13 @@ import greenPlate from "../img/greenPlate.png";
 import leftLeaf from "../img/leftLeaf.png";
 import rightLeaf from "../img/rightLeaf.png";
 import topLeaf from "../img/topLeaf.png";
-// import hotSpicy from "../img/hot-spicy.jpg"
+import hotSpicy from "../img/hot-spicy.jpg";
+import grilledMean from "../img/pexels-photo-pik-6340916.jpg"
+import chicken from "../img/pexels-mariana-silvestre-2833499.jpg"
+import salad from "../img/salad.png"
+import { BsHeart } from "react-icons/bs";
+import { BsHeartFill } from "react-icons/bs";
+import { FaPlus } from "react-icons/fa";
 
 const Home = () => {
   return (
@@ -37,39 +43,255 @@ const Home = () => {
         </div>
 
         <div className="w-6/12 flex justify-center relative">
+          <img src={greenPlate} alt="plate" className="h-96 relative  pl-10" />
+          <img src={leftLeaf} alt="" className="w-32 absolute top-1/4 left-0" />
           <img
-            src={greenPlate}
-            alt="plate"
-            className="h-96 relative  pl-10"
+            src={rightLeaf}
+            alt=""
+            className="w-40 absolute top-leafRight right-24"
           />
-          <img src={leftLeaf} alt="" className="w-32 absolute top-1/4 left-0"/>
-          <img src={rightLeaf} alt="" className="w-40 absolute top-leafRight right-24"/>
-          <img src={topLeaf} alt="top leaf" className="w-40 absolute top-leafUp left-24"/>
+          <img
+            src={topLeaf}
+            alt="top leaf"
+            className="w-40 absolute top-leafUp left-24"
+          />
         </div>
       </div>
 
-      {/* ====== This line below is causing overflow-x, try fix it =====  */}
-      {/* <div className="ml-32 mt-20">
-        <p className="text-priGreen font-bold text-lg">Chef's special</p> */}
+      {/* The card holder */}
+      <div className=" mt-20">
+        <p className="text-priGreen font-bold text-lg">Chef's special</p>
         {/* For the Cards */}
-        {/* <div className="mt-5">
-          <div className="rounded-xl shadow-3xl w-40 h-60 p-4">
-            <p className="">Heart</p>
-            <div className="flex justify-center">
-              <img src={hotSpicy} alt="" className="h-20 w-20 rounded-full"/>
+        <div className="mt-5 flex space-x-10 overflow-x-auto overflow-visible p-5">
+
+          {/* card 1 */}
+          <div className="rounded-xl shadow-3xl w-56 h-72 p-5 mb-4">
+            <div className="float-right">
+              <BsHeart className="text-danger cursor-pointer" />
             </div>
-            <p className="text-sm text-priBlack ">Thunder Spicy burger</p>
-            <p className="text-priGray text-xs ">Double carne con queso</p>
-            <div className="pt-4 flex space-x-10">
-              <span className="text-priBlack">$12.58</span>
-              <button>Add</button>
+            <div className="flex justify-center mt-5">
+              <img src={hotSpicy} alt="" className="h-28 w-28 rounded-full" />
+            </div>
+            <p className="text-sm text-priBlack mt-4">Thunder Spicy burger</p>
+            <p className="text-priGray text-xs mt-2">Double carne con queso</p>
+            <div className="mt-4">
+              <span className="text-secBlack font-bold flex float-left">$12.58</span>
+              <div className=" bg-danger">
+                <FaPlus className="float-right text-priGreen mr-2 h-5 w-5 cursor-pointer mb-4" />
+              </div>
             </div>
           </div>
-        </div>
 
-      
-      </div> */}
+          {/* card 2 */}
+          <div className="rounded-xl shadow-3xl w-56 h-72 p-5 mb-4">
+            <div className="float-right">
+              <BsHeartFill className="text-danger cursor-pointer" />
+            </div>
+            <div className="flex justify-center mt-5">
+              <img src={grilledMean} alt="" className="h-28 w-28 rounded-full" />
+            </div>
+            <p className="text-sm text-priBlack mt-4">Grilled Meat</p>
+            <p className="text-priGray text-xs mt-2">Double carne con queso</p>
+            <div className="mt-4">
+              <span className="text-secBlack font-bold flex float-left">$12.58</span>
+              <div className=" bg-danger">
+                <FaPlus className="float-right text-priGreen mr-2 h-5 w-5 cursor-pointer mb-4" />
+              </div>
+            </div>
+          </div>
 
+          {/* card 3 */}
+          <div className="rounded-xl shadow-3xl w-56 h-72 p-5 mb-4">
+            <div className="float-right">
+              <BsHeartFill className="text-danger cursor-pointer" />
+            </div>
+            <div className="flex justify-center mt-5">
+              <img src={salad} alt="" className="h-28 w-28 rounded-full" />
+            </div>
+            <p className="text-sm text-priBlack mt-4">Thunder Salad</p>
+            <p className="text-priGray text-xs mt-2">Double carne con queso</p>
+            <div className="mt-4">
+              <span className="text-secBlack font-bold flex float-left">$12.58</span>
+              <div className=" bg-danger">
+                <FaPlus className="float-right text-priGreen mr-2 h-5 w-5 cursor-pointer mb-4" />
+              </div>
+            </div>
+          </div>
+
+          {/* card 4 */}
+          <div className="rounded-xl shadow-3xl w-56 h-72 p-5 mb-4">
+            <div className="float-right">
+              <BsHeartFill className="text-danger cursor-pointer" />
+            </div>
+            <div className="flex justify-center mt-5">
+              <img src={chicken} alt="" className="h-28 w-28 rounded-full" />
+            </div>
+            <p className="text-sm text-priBlack mt-4">Chicken Stream</p>
+            <p className="text-priGray text-xs mt-2">Double carne con queso</p>
+            <div className="mt-4">
+              <span className="text-secBlack font-bold flex float-left">$12.58</span>
+              <div className=" bg-danger">
+                <FaPlus className="float-right text-priGreen mr-2 h-5 w-5 cursor-pointer mb-4" />
+              </div>
+            </div>
+          </div>
+
+
+          {/* card 5 */}
+          {/* <div className="rounded-xl shadow-3xl w-56 h-72 p-5 mb-4">
+            <div className="float-right">
+              <BsHeart className="text-danger cursor-pointer" />
+            </div>
+            <div className="flex justify-center mt-5">
+              <img src={hotSpicy} alt="" className="h-28 w-28 rounded-full" />
+            </div>
+            <p className="text-sm text-priBlack mt-4">Thunder Spicy burger</p>
+            <p className="text-priGray text-xs mt-2">Double carne con queso</p>
+            <div className="mt-4">
+              <span className="text-secBlack font-bold flex float-left">$12.58</span>
+              <div className=" bg-danger">
+                <FaPlus className="float-right text-priGreen mr-2 h-5 w-5 cursor-pointer mb-4" />
+              </div>
+            </div>
+          </div> */}
+
+          {/* card 6 */}
+          {/* <div className="rounded-xl shadow-3xl w-56 h-72 p-5 mb-4">
+            <div className="float-right">
+              <BsHeart className="text-danger cursor-pointer" />
+            </div>
+            <div className="flex justify-center mt-5">
+              <img src={hotSpicy} alt="" className="h-28 w-28 rounded-full" />
+            </div>
+            <p className="text-sm text-priBlack mt-4">Thunder Spicy burger</p>
+            <p className="text-priGray text-xs mt-2">Double carne con queso</p>
+            <div className="mt-4">
+              <span className="text-secBlack font-bold flex float-left">$12.58</span>
+              <div className=" bg-danger">
+                <FaPlus className="float-right text-priGreen mr-2 h-5 w-5 cursor-pointer mb-4" />
+              </div>
+            </div>
+          </div> */}
+        </div>     
+      </div>
+
+
+      {/* The card holder */}
+      <div className=" mt-20">
+        <p className="text-priGreen font-bold text-lg">Chef's special</p>
+        {/* For the Cards */}
+        <div className="mt-5 flex space-x-10 overflow-x-auto overflow-visible p-5">
+
+          {/* card 1 */}
+          <div className="rounded-xl shadow-3xl w-56 h-72 p-5 mb-4">
+            <div className="float-right">
+              <BsHeart className="text-danger cursor-pointer" />
+            </div>
+            <div className="flex justify-center mt-5">
+              <img src={hotSpicy} alt="" className="h-28 w-28 rounded-full" />
+            </div>
+            <p className="text-sm text-priBlack mt-4">Thunder Spicy burger</p>
+            <p className="text-priGray text-xs mt-2">Double carne con queso</p>
+            <div className="mt-4">
+              <span className="text-secBlack font-bold flex float-left">$12.58</span>
+              <div className=" bg-danger">
+                <FaPlus className="float-right text-priGreen mr-2 h-5 w-5 cursor-pointer mb-4" />
+              </div>
+            </div>
+          </div>
+
+          {/* card 2 */}
+          <div className="rounded-xl shadow-3xl w-56 h-72 p-5 mb-4">
+            <div className="float-right">
+              <BsHeartFill className="text-danger cursor-pointer" />
+            </div>
+            <div className="flex justify-center mt-5">
+              <img src={grilledMean} alt="" className="h-28 w-28 rounded-full" />
+            </div>
+            <p className="text-sm text-priBlack mt-4">Grilled Meat</p>
+            <p className="text-priGray text-xs mt-2">Double carne con queso</p>
+            <div className="mt-4">
+              <span className="text-secBlack font-bold flex float-left">$12.58</span>
+              <div className=" bg-danger">
+                <FaPlus className="float-right text-priGreen mr-2 h-5 w-5 cursor-pointer mb-4" />
+              </div>
+            </div>
+          </div>
+
+          {/* card 3 */}
+          <div className="rounded-xl shadow-3xl w-56 h-72 p-5 mb-4">
+            <div className="float-right">
+              <BsHeartFill className="text-danger cursor-pointer" />
+            </div>
+            <div className="flex justify-center mt-5">
+              <img src={salad} alt="" className="h-28 w-28 rounded-full" />
+            </div>
+            <p className="text-sm text-priBlack mt-4">Thunder Salad</p>
+            <p className="text-priGray text-xs mt-2">Double carne con queso</p>
+            <div className="mt-4">
+              <span className="text-secBlack font-bold flex float-left">$12.58</span>
+              <div className=" bg-danger">
+                <FaPlus className="float-right text-priGreen mr-2 h-5 w-5 cursor-pointer mb-4" />
+              </div>
+            </div>
+          </div>
+
+          {/* card 4 */}
+          <div className="rounded-xl shadow-3xl w-56 h-72 p-5 mb-4">
+            <div className="float-right">
+              <BsHeartFill className="text-danger cursor-pointer" />
+            </div>
+            <div className="flex justify-center mt-5">
+              <img src={chicken} alt="" className="h-28 w-28 rounded-full" />
+            </div>
+            <p className="text-sm text-priBlack mt-4">Chicken Stream</p>
+            <p className="text-priGray text-xs mt-2">Double carne con queso</p>
+            <div className="mt-4">
+              <span className="text-secBlack font-bold flex float-left">$12.58</span>
+              <div className=" bg-danger">
+                <FaPlus className="float-right text-priGreen mr-2 h-5 w-5 cursor-pointer mb-4" />
+              </div>
+            </div>
+          </div>
+
+
+          {/* card 5 */}
+          {/* <div className="rounded-xl shadow-3xl w-56 h-72 p-5 mb-4">
+            <div className="float-right">
+              <BsHeart className="text-danger cursor-pointer" />
+            </div>
+            <div className="flex justify-center mt-5">
+              <img src={hotSpicy} alt="" className="h-28 w-28 rounded-full" />
+            </div>
+            <p className="text-sm text-priBlack mt-4">Thunder Spicy burger</p>
+            <p className="text-priGray text-xs mt-2">Double carne con queso</p>
+            <div className="mt-4">
+              <span className="text-secBlack font-bold flex float-left">$12.58</span>
+              <div className=" bg-danger">
+                <FaPlus className="float-right text-priGreen mr-2 h-5 w-5 cursor-pointer mb-4" />
+              </div>
+            </div>
+          </div> */}
+
+          {/* card 6 */}
+          {/* <div className="rounded-xl shadow-3xl w-56 h-72 p-5 mb-4">
+            <div className="float-right">
+              <BsHeart className="text-danger cursor-pointer" />
+            </div>
+            <div className="flex justify-center mt-5">
+              <img src={hotSpicy} alt="" className="h-28 w-28 rounded-full" />
+            </div>
+            <p className="text-sm text-priBlack mt-4">Thunder Spicy burger</p>
+            <p className="text-priGray text-xs mt-2">Double carne con queso</p>
+            <div className="mt-4">
+              <span className="text-secBlack font-bold flex float-left">$12.58</span>
+              <div className=" bg-danger">
+                <FaPlus className="float-right text-priGreen mr-2 h-5 w-5 cursor-pointer mb-4" />
+              </div>
+            </div>
+          </div> */}
+        </div>     
+      </div>
     </div>
   );
 };
