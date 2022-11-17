@@ -6,6 +6,7 @@ import {
   Routes,
   Route 
 } from "react-router-dom";
+import Shop from "./Pages/Shop";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/menu" element={<Menu />} />
+        <Route exact path="/shop" element={<Shop />} />
       </Routes>
     </Router>
   )

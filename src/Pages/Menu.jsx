@@ -1,7 +1,7 @@
 import left_plate from "../img/left_plate.jpg";
 import middle_plate from "../img/middle_plate.jpg";
 import right_plate from "../img/right_plate.jpg";
-import Menus from "./Components/Menus";
+import Menus from "../Components/Menus";
 
 const plateArr = [
   {
