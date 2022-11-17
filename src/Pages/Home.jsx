@@ -2,7 +2,7 @@ import greenPlate from "../img/greenPlate.png";
 import leftLeaf from "../img/leftLeaf.png";
 import rightLeaf from "../img/rightLeaf.png";
 import topLeaf from "../img/topLeaf.png";
-import hotSpicy from "../img/hot-spicy.jpg"
+// import hotSpicy from "../img/hot-spicy.jpg"
 
 const Home = () => {
   return (

@@ -31,42 +31,42 @@ const Navbar = () => {
           >
             Home
           </Link>
-          {/* <Link
+          <Link
             to={"/menu"}
             className={`${
               activeLink === "menu" ? "font-bold" : "hover:text-priGreen"
             }`}
             onClick={() => setActiveLink("menu")}
-          > */}
+          >
             Menu
-          {/* </Link> */}
-          {/* <Link
+          </Link>
+          <Link
             to={"/service"}
             className={`text-priBlack ${
               activeLink === "service" ? "font-bold" : "hover:text-priGreen"
             }`}
             onClick={() => setActiveLink("service")}
-          > */}
+          >
             Service
-          {/* </Link> */}
-          {/* <Link
+          </Link>
+          <Link
             to={"/shop"}
             className={`text-priBlack ${
               activeLink === "shop" ? "font-bold" : "hover:text-priGreen"
             }`}
             onClick={() => setActiveLink("shop")}
-          > */}
+          >
             Shop
-          {/* </Link> */}
-          {/* <Link
+          </Link>
+          <Link
             to={"/category"}
             className={`text-priBlack ${
               activeLink === "category" ? "font-bold" : "hover:text-priGreen"
             }`}
             onClick={() => setActiveLink("category")}
-          > */}
+          >
             Category
-          {/* </Link> */}
+          </Link>
         </div>
 
         <div className="flex items-center md:space-x-4 lg:space-x-6">

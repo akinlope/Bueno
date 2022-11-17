@@ -34,6 +34,9 @@ module.exports = {
       spacing: {
         'leafUp': '-70px',
         'leafRight': '-50px',
+      },
+      margin: {
+        'menu': '-10px',
       }
     },
   },
