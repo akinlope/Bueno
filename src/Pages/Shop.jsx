@@ -1,5 +1,5 @@
 import { MdFilterList } from "react-icons/md";
-import { BsHeartFill } from "react-icons/bs";
+import ShopCard from "../Components/ShopCard";
 
 const Shop = () => {
   return (
@@ -17,7 +17,7 @@ const Shop = () => {
             <MdFilterList className="text-danger text-xl" />
             <p className="text-pureBlue font-medium">Filter</p>
           </div>
-          <select className="cursor-pointer">
+          <select className="cursor-pointer text-pureBlue">
             <option value="all food">All food</option>
             <option value="burger">Burger</option>
             <option value="chicken">Chicken</option>
@@ -29,17 +29,7 @@ const Shop = () => {
 
       {/* shop design  */}
       <div className="grid grid-cols-5">
-        <div className="rounded-2xl border border-priGray p-4">
-          <div className="text-right">
-            <BsHeartFill />
-          </div>
-          <div className="relative mt-6">
-            <div className="bg-secBlue w-28 h-28 rounded-full mx-auto blur-xl"></div>
-            <div className="w-28 h-28 rounded-full mx-auto">
-                <img src="" alt="food" />
-            </div>
-          </div>
-        </div>
+        <ShopCard />
       </div>
     </div>
   );
