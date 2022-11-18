@@ -104,3 +104,19 @@ export const leafMove = {
     },
   }),
 };
+
+export const fadeInSpring = {
+  initial: {
+    opacity: 0,
+    y: -100,
+  },
+  animate: (custom) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring",
+      stiffness: 150,
+      delay: custom * 1,
+    },
+  }),
+};
