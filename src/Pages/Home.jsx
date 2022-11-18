@@ -17,7 +17,7 @@ import {
   rotatePlate,
   slideAcross,
 } from "../variants";
-import expArr from "../Temp/explore"
+import expArr from "../Temp/explore";
 // import holArr from "../Temp/holiday";
 
 const Home = () => {
@@ -146,11 +146,38 @@ const Home = () => {
         </div>
       </div>
 
-      {/* The card holder */}
+      {/* Chief special  */}
       <div className=" mt-20">
         <p className="text-priGreen font-medium text-lg">Chef's special</p>
-        {/* For esach section of the Cards */}
+        {/* For each section of the Cards */}
         <div className="mt-5 p-0">
+          <CardNormal chefArr={chefArr} />
+        </div>
+      </div>
+
+      {/* Best deal  */}
+      <div className=" mt-10">
+        <p className="text-priGreen font-medium text-lg">Best Deals</p>
+        <Bestdeals bestArr={bestD} />
+      </div>
+
+      {/* Explore categories  */}
+      <div className=" mt-10">
+        <p className="text-priGreen font-medium text-lg">Explore Categories</p>
+        <Explore expArr={expArr} />
+      </div>
+
+      {/* Holiday special */}
+      <div className=" mt-10">
+        <p className="text-priGreen font-medium text-lg">Holiday special</p>
+        {/* <Explore holArr={holArr}/> */}
+      </div>
+
+      {/* The card holder */}
+      {/* <div className=" mt-20">
+        <p className="text-priGreen font-medium text-lg">Chef's special</p> */}
+      {/* For each section of the Cards */}
+      {/* <div className="mt-5 p-0">
           <CardNormal chefArr={chefArr} />
         </div>
         <div className=" mt-10">
@@ -158,19 +185,16 @@ const Home = () => {
           <Bestdeals bestArr={bestD} />
         </div>
         <div className=" mt-10">
-          <p className="text-priGreen font-medium text-lg">Explore Categories</p>
-          <Explore expArr={expArr}/>
+          <p className="text-priGreen font-medium text-lg">
+            Explore Categories
+          </p>
+          <Explore expArr={expArr} />
         </div>
         <div className=" mt-10">
-          <p className="text-priGreen font-medium text-lg">Holiday special</p>
-          {/* <Explore holArr={holArr}/> */}
-        </div>
-
-
-      </div>
-
-
-
+          <p className="text-priGreen font-medium text-lg">Holiday special</p> */}
+      {/* <Explore holArr={holArr}/> */}
+      {/* </div>
+      </div> */}
     </div>
   );
 };
