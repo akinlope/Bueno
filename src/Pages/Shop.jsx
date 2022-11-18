@@ -1,10 +1,11 @@
 import { MdFilterList } from "react-icons/md";
+import { BsArrowUp } from "react-icons/bs";
 import ShopCard from "../Components/ShopCard";
 import shopArr from "../Temp/shop";
 
 const Shop = () => {
   return (
-    <div className="w-screen px-12">
+    <div className="w-screen px-12 relative">
       {/* title and filter  */}
       <div className="flex items-center justify-between mb-12">
         <div>
@@ -31,6 +32,23 @@ const Shop = () => {
       {/* shop design  */}
       <div className="grid grid-cols-5 gap-x-5 gap-y-12">
         <ShopCard shopArr={shopArr} />
+      </div>
+
+      {/* load more button  */}
+      <div className="text-center mt-12">
+        <button className="text-pureWhite bg-pureBlue rounded-full px-10 py-4 font-regular text-sm">
+          Load more
+        </button>
+      </div>
+
+      {/* bottom text  */}
+      <p className="text-center mt-10 text-priGray opacity-60 mb-12">
+        Fast food. Fast delivery. Easy pickup
+      </p>
+
+      {/* scroll to top  */}
+      <div className="rounded-full bg-priGreen text-center p-3 fixed right-12 z-10 bottom-10 cursor-pointer">
+        <BsArrowUp className="text-pureWhite" />
       </div>
     </div>
   );
