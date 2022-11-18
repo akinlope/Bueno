@@ -5,11 +5,19 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { motion } from "framer-motion";
+import { navVariants } from "./variants";
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState("home");
+
   return (
-    <nav className="px-3 md:px-6 lg:px-12 py-6 w-screen relative">
+    <motion.nav
+      className="px-3 md:px-6 lg:px-12 py-6 w-screen relative"
+      variants={navVariants}
+      initial="initial"
+      animate="animate"
+    >
       <div className="flex justify-between items-center">
         <div className="md:hidden">
           <HiOutlineMenuAlt2 className="text-pureBlue text-3xl font-medium cursor-pointer" />
@@ -82,7 +90,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 
