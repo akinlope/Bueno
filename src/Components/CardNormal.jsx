@@ -4,6 +4,7 @@ import { BsHeart } from "react-icons/bs";
 import { FaPlus } from "react-icons/fa";
 
 const CardNormal = ({ chefArr }) => {
+  // console.log(chefArr);
   return (
     <Swiper spaceBetween={50} slidesPerView={"auto"}>
       {chefArr.map(({ id, title, desc, img, price }) => {
