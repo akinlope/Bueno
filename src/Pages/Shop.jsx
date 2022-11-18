@@ -1,5 +1,6 @@
 import { MdFilterList } from "react-icons/md";
 import ShopCard from "../Components/ShopCard";
+import shopArr from "../Temp/shop";
 
 const Shop = () => {
   return (
@@ -28,8 +29,8 @@ const Shop = () => {
       </div>
 
       {/* shop design  */}
-      <div className="grid grid-cols-5">
-        <ShopCard />
+      <div className="grid grid-cols-5 gap-x-5 gap-y-12">
+        <ShopCard shopArr={shopArr} />
       </div>
     </div>
   );

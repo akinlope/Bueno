@@ -30,7 +30,7 @@ const Menus = () => {
     <div className="grid grid-cols-3 gap-14 mt-8 mb-12">
       {menuArr.map(({ id, title }) => {
         return (
-          <div className="w-96 rounded-2xl border border-priBrown" key={id}>
+          <div className="w-96 rounded-2xl shadow-3xl" key={id}>
             <h1 className="bg-pureBlue rounded-tr-2xl rounded-tl-2xl p-4 capitalize text-center text-pureWhite text-lg font-medium">
               {title}
             </h1>
