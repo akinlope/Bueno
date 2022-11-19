@@ -37,7 +37,7 @@ const Home = () => {
               animate="animate"
               custom={1.5}
             >
-              <p className="text-4xl px-4 text-center font-extrabold md:text-left md:px-0 md:text-7xl text-priBlack capitalize">
+              <p className="text-4xl px-4 text-center font-extrabold md:text-left md:px-0 md:text-5xl lg:text-7xl text-priBlack capitalize">
                 fastest <br /> <span className="text-priGreen">food</span>{" "}
                 delivery <br /> & easy{" "}
                 <span className="text-priGreen">pickup.</span>
@@ -61,7 +61,7 @@ const Home = () => {
           </div>
 
           <motion.p
-            className="text-center w-full px-5 md:w-3/4 md:px-0 md:mx-0 md:text-left text-priBrown mt-5"
+            className="text-center w-full text-xs px-5 lg:w-2/3 md:px-0 md:mx-0 md:text-left md:text-sm text-priBrown mt-5"
             variants={fadeInUpDown("down")}
             initial="initial"
             animate="animate"
@@ -91,7 +91,7 @@ const Home = () => {
 
         <div className="w-full pt-10 mb-10 flex justify-center items-center relative md:w-6/12 md:pt-0 md:mb-0">
           <motion.div
-            className="max-w-xs md:h-96 md:w-auto md:max-w-none relative md:pl-10"
+            className="max-w-xs md:h-72 lg:h-96 md:w-auto md:max-w-none relative md:pl-10"
             variants={plateVariant}
             initial="initial"
             animate="animate"
@@ -106,7 +106,7 @@ const Home = () => {
 
           {/* first leaf  */}
           <motion.div
-            className="hidden md:block w-32 absolute top-1/4 left-0"
+            className="hidden md:block md:w-24 lg:w-32 absolute top-1/4 left-0"
             custom={1.3}
             variants={leafVariants}
             initial="initial"
@@ -122,7 +122,7 @@ const Home = () => {
 
           {/* second leaf  */}
           <motion.div
-            className="hidden md:block w-40 absolute top-leafRight right-24"
+            className="hidden md:block md:w-32 lg:w-40 absolute top-leafRight md:right-10 lg:right-24"
             custom={1.7}
             variants={leafVariants}
             initial="initial"
@@ -138,7 +138,7 @@ const Home = () => {
 
           {/* third leaf  */}
           <motion.div
-            className="hidden md:block w-40 absolute top-leafUp left-24"
+            className="hidden md:block md:w-32 lg:w-40 absolute top-leafUp left-24"
             custom={1.5}
             variants={leafVariants}
             initial="initial"

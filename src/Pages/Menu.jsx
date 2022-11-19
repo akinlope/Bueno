@@ -17,6 +17,7 @@ const plateArr = [
     img: middle_plate,
     margin: "mt-8",
     delay: 0.9,
+    hidden: 'hidden'
   },
   {
     id: 3,
@@ -30,20 +31,20 @@ const Menu = () => {
   return (
     <div className="w-screen px-12">
       {/* Hero section  */}
-      <div className="flex items-center min-h-hero">
+      <div className="flex flex-col md:flex-row items-center min-h-hero">
         {/* The three images  */}
-        <div className="w-3/5 flex space-x-6">
-          {plateArr.map(({ id, img, margin, delay }) => {
+        <div className="w-full md:w-3/5 flex justify-center mb-10 md:mb-0 md:justify-start space-x-6 mt-10 md:mt-0">
+          {plateArr.map(({ id, img, margin, delay, hidden }) => {
             return (
               <motion.div
-                className={`rounded-2xl overflow-hidden w-52 h-72 ${margin}`}
+                className={`rounded-2xl overflow-hidden w-52 h-72 ${margin} ${hidden} md:block`}
                 key={id}
                 variants={fadeInSpring}
                 initial="initial"
                 animate="animate"
                 custom={delay}
               >
-                <img src={img} alt="img" className="h-72 w-96  object-cover" />
+                <img src={img} alt="img" className="h-72 w-96 object-cover" />
               </motion.div>
             );
           })}
