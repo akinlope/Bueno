@@ -14,16 +14,19 @@ const CardNormal = ({ chefArr }) => {
               <div className="float-right">
                 <BsHeart className="text-danger cursor-pointer" />
               </div>
-              <div className="flex justify-center mt-5">
+              <div className="relative flex items-center justify-center mt-8 mb-6">
+              <div className="bg-secBlue w-28 h-28 rounded-full blur-lg absolute"></div>
+              <div className="w-32 h-32 rounded-full z-10 bg-danger overflow-hidden -mt-2">
                 <img
                   src={img}
                   alt={img}
-                  className="h-28 w-28 object-cover rounded-full"
+                  className="w-32 h-32 object-cover"
                 />
               </div>
-              <p className="text-sm text-priBlack mt-4">{title}</p>
+              </div>
+              <p className="text-sm text-priBlack mt-3">{title}</p>
               <p className="text-priGray text-xs mt-2">{desc}</p>
-              <div className="mt-4">
+              <div className="mt-2">
                 <span className="text-secBlack font-bold flex float-left">
                   ${price}
                 </span>

@@ -18,7 +18,10 @@ import {
   slideAcross,
 } from "../variants";
 import expArr from "../Temp/explore";
-// import holArr from "../Temp/holiday";
+import Holiday from "../Components/Holiday";
+import holArr from "../Temp/holiday";
+import Reconmends from "../Components/Reconmends";
+import recArr from "../Temp/Reconmends";
 
 const Home = () => {
   return (
@@ -156,7 +159,10 @@ const Home = () => {
 
       {/* Chief special  */}
       <div className=" mt-20">
+        <div className="flex bg-priBlack">
         <p className="text-priGreen font-medium text-lg">Chef's special</p>
+        <p className="text-danger float-right">see all</p>
+        </div>
         {/* For each section of the Cards */}
         <div className="mt-5 p-0">
           <CardNormal chefArr={chefArr} />
@@ -178,7 +184,13 @@ const Home = () => {
       {/* Holiday special */}
       <div className=" mt-10">
         <p className="text-priGreen font-medium text-lg">Holiday special</p>
-        {/* <Explore holArr={holArr}/> */}
+        <Holiday holArr={holArr} />
+      </div>
+
+      {/* Reconmends */}
+      <div className="mt-10">
+        <p className="text-priGreen font-medium text-lg">Reconmends</p>
+        <Reconmends recArr={recArr}/>
       </div>
 
       {/* The card holder */}

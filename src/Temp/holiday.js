@@ -10,8 +10,7 @@ const holArr = [
         save: 20,
         pic: grillMeat,
         oldPrice: 50.32,
-        newPrice: 40.25,
-        badgeColor: "#7EA33E"
+        newPrice: 40.25
     },
     {
         id: 2,
@@ -19,8 +18,7 @@ const holArr = [
         save: 50,
         pic: chicken,
         oldPrice: 125.00,
-        newPrice: 62.90,
-        badgeColor: "#7EA33E"
+        newPrice: 62.90
     },
     {
         id: 3,
@@ -28,8 +26,7 @@ const holArr = [
         save: 20,
         pic: burger,
         oldPrice: 50.32,
-        newPrice: 40.25,
-        badgeColor: "#7EA33E"
+        newPrice: 40.25
     },
     {
         id: 4,
@@ -37,8 +34,7 @@ const holArr = [
         save: 20,
         pic: salad,
         oldPrice: 50.32,
-        newPrice: 40.25,
-        badgeColor: "#7EA33E"
+        newPrice: 40.25
     },
     {
         id: 5,
@@ -46,8 +42,7 @@ const holArr = [
         save: 30,
         pic: grillMeat,
         oldPrice: 125.00,
-        newPrice: 62.90,
-        badgeColor: "#7EA33E"
+        newPrice: 62.90
     },
     {
         id: 6,
@@ -55,8 +50,7 @@ const holArr = [
         save: 30,
         pic: burger,
         oldPrice: 100.00,
-        newPrice: 70.00,
-        badgeColor: "#7EA33E"
+        newPrice: 70.00
     },
     {
         id: 7,
@@ -64,8 +58,7 @@ const holArr = [
         save: 50,
         pic: chicken,
         oldPrice: 125.00,
-        newPrice: 62.90,
-        badgeColor: "#7EA33E"
+        newPrice: 62.90
     },
     {
         id: 8,
@@ -73,8 +66,7 @@ const holArr = [
         save: 50,
         pic: chicken,
         oldPrice: 95.00,
-        newPrice: 62.90,
-        badgeColor: "#7EA33E"
+        newPrice: 62.90
     }
 ]
 
