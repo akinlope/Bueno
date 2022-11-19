@@ -11,7 +11,8 @@ const bestD = [
         pic: grillMeat,
         oldPrice: 50.32,
         newPrice: 40.25,
-        badgeColor: "#EE4444"
+        ttitle: "Grilled Meant",
+        discription: "Double carne con queso"
     },
     {
         id: 2,
@@ -20,7 +21,8 @@ const bestD = [
         pic: chicken,
         oldPrice: 125.00,
         newPrice: 62.90,
-        badgeColor: "#EE4444"
+        ttitle: "Chicken",
+        discription: "Double carne con queso"
     },
     {
         id: 3,
@@ -29,7 +31,8 @@ const bestD = [
         pic: burger,
         oldPrice: 50.32,
         newPrice: 40.25,
-        badgeColor: "#EE4444"
+        ttitle: "Burger",
+        discription: "Double carne con queso"
     },
     {
         id: 4,
@@ -38,7 +41,8 @@ const bestD = [
         pic: salad,
         oldPrice: 50.32,
         newPrice: 40.25,
-        badgeColor: "#EE4444"
+        ttitle: "Salad",
+        discription: "Double carne con queso"
     },
     {
         id: 5,
@@ -47,7 +51,8 @@ const bestD = [
         pic: grillMeat,
         oldPrice: 125.00,
         newPrice: 62.90,
-        badgeColor: "#EE4444"
+        ttitle: "Grilled Meat",
+        discription: "Double carne con queso"
     },
     {
         id: 6,
@@ -56,7 +61,8 @@ const bestD = [
         pic: burger,
         oldPrice: 100.00,
         newPrice: 70.00,
-        badgeColor: "#EE4444"
+        ttitle: "Burger",
+        discription: "Double carne con queso"
     },
     {
         id: 7,
@@ -65,7 +71,8 @@ const bestD = [
         pic: chicken,
         oldPrice: 125.00,
         newPrice: 62.90,
-        badgeColor: "#EE4444"
+        ttitle: "Chicken",
+        discription: "Double carne con queso"
     },
     {
         id: 8,
@@ -74,7 +81,8 @@ const bestD = [
         pic: chicken,
         oldPrice: 95.00,
         newPrice: 62.90,
-        badgeColor: "#EE4444"
+        ttitle: "Chicken",
+        discription: "Double carne con queso"
     }
 ]
 
