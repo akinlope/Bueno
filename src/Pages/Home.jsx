@@ -22,9 +22,9 @@ import expArr from "../Temp/explore";
 
 const Home = () => {
   return (
-    <div className="w-screen px-12">
-      <div className="flex items-center min-h-hero">
-        <div className=" w-6/12">
+    <div className="w-screen px-3 md:px-6 lg:px-12">
+      <div className="flex-col-reverse md:flex-row flex items-center min-h-hero">
+        <div className="w-full md:w-6/12">
           <div className="relative">
             <motion.div
               variants={slideAcross}
@@ -37,7 +37,15 @@ const Home = () => {
               animate="animate"
               custom={1.5}
             >
-              <p className="text-7xl font-extrabold text-priBlack">Fastest</p>
+              <p className="text-4xl px-4 text-center font-extrabold md:text-left md:px-0 md:text-7xl text-priBlack capitalize">
+                fastest <br /> <span className="text-priGreen">food</span>{" "}
+                delivery <br /> & easy{" "}
+                <span className="text-priGreen">pickup.</span>
+              </p>
+
+              {/* <p className="text-4xl md:text-7xl font-extrabold text-priBlack">
+                Fastest
+              </p>
               <div className="flex space-x-4">
                 <p className="text-7xl font-extrabold text-priGreen">Food</p>
                 <p className="text-7xl font-extrabold text-priBlack">
@@ -48,12 +56,12 @@ const Home = () => {
               <div className="flex space-x-4">
                 <p className="text-7xl font-extrabold text-priBlack">& Easy</p>
                 <p className="text-7xl font-extrabold text-priGreen">Pickup.</p>
-              </div>
+              </div> */}
             </motion.div>
           </div>
 
           <motion.p
-            className="text-priBrown mt-5 pr-40 w-auto"
+            className="text-center w-full px-5 md:w-3/4 md:px-0 md:mx-0 md:text-left text-priBrown mt-5"
             variants={fadeInUpDown("down")}
             initial="initial"
             animate="animate"
@@ -66,24 +74,24 @@ const Home = () => {
 
           {/* For the buttons */}
           <motion.div
-            className="mt-5 flex  w-2/3 space-x-8"
+            className="w-full mt-5 flex flex-col items-center justify-center md:flex-row md:justify-start md:space-x-8"
             variants={fadeInUpDown("up")}
             initial="initial"
             animate="animate"
             custom={2}
           >
-            <button className="bg-secBlack p-3 rounded-lg text-pureWhite">
+            <button className="bg-secBlack p-3 rounded-lg text-pureWhite mb-5 md:mb-0">
               Check Out Menu
             </button>
-            <button className="bg-pureWhite px-6 rounded-lg text-secBlack border ">
+            <button className="bg-pureWhite px-6 py-3 rounded-lg text-secBlack border">
               Order Now
             </button>
           </motion.div>
         </div>
 
-        <div className="w-6/12 flex justify-center relative">
+        <div className="w-full pt-10 mb-10 flex justify-center items-center relative md:w-6/12 md:pt-0 md:mb-0">
           <motion.div
-            className="h-96 relative  pl-10"
+            className="max-w-xs md:h-96 md:w-auto md:max-w-none relative md:pl-10"
             variants={plateVariant}
             initial="initial"
             animate="animate"
@@ -98,7 +106,7 @@ const Home = () => {
 
           {/* first leaf  */}
           <motion.div
-            className="w-32 absolute top-1/4 left-0"
+            className="hidden md:block w-32 absolute top-1/4 left-0"
             custom={1.3}
             variants={leafVariants}
             initial="initial"
@@ -114,7 +122,7 @@ const Home = () => {
 
           {/* second leaf  */}
           <motion.div
-            className="w-40 absolute top-leafRight right-24"
+            className="hidden md:block w-40 absolute top-leafRight right-24"
             custom={1.7}
             variants={leafVariants}
             initial="initial"
@@ -130,7 +138,7 @@ const Home = () => {
 
           {/* third leaf  */}
           <motion.div
-            className="w-40 absolute top-leafUp left-24"
+            className="hidden md:block w-40 absolute top-leafUp left-24"
             custom={1.5}
             variants={leafVariants}
             initial="initial"
