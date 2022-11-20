@@ -25,7 +25,7 @@ import recArr from "../Temp/Reconmends";
 import { useEffect } from "react";
 
 const Home = ({ setLink }) => {
-  // to set active link 
+  // to set active link
   useEffect(() => {
     const linked = () => {
       setLink("Home");
@@ -153,10 +153,10 @@ const Home = ({ setLink }) => {
 
       {/* Chief special  */}
       <div className=" mt-20">
-        <div className="flex items-center justify-between">
-          <p className="text-priGreen font-medium text-lg">Chef's special</p>
-          <p className="text-danger font-medium">see all</p>
-        </div>
+        {/* <div className="flex items-center justify-between"> */}
+        <p className="text-priGreen font-medium text-lg">Chef's special</p>
+        {/* <p className="text-danger font-medium">see all</p> */}
+        {/* </div> */}
         {/* For each section of the Cards */}
         <div className="mt-5 p-0">
           <CardNormal chefArr={chefArr} />
@@ -165,25 +165,41 @@ const Home = ({ setLink }) => {
 
       {/* Best deal  */}
       <div className=" mt-10">
-        <p className="text-priGreen font-medium text-lg">Best Deals</p>
+        <div className="flex items-center justify-between">
+          <p className="text-priGreen font-medium text-lg">Best Deals</p>
+          <p className="text-danger font-medium ">see all</p>
+        </div>
+
         <Bestdeals bestArr={bestD} />
       </div>
 
       {/* Explore categories  */}
       <div className=" mt-10">
-        <p className="text-priGreen font-medium text-lg">Explore Categories</p>
+        <div className="flex items-center justify-between">
+          <p className="text-priGreen font-medium text-lg">
+            Explore Categories
+          </p>
+          <p className="text-danger font-medium">see all</p>
+        </div>
         <Explore expArr={expArr} />
       </div>
 
       {/* Holiday special */}
       <div className=" mt-10">
-        <p className="text-priGreen font-medium text-lg">Holiday special</p>
+        <div className="flex items-center justify-between">
+          <p className="text-priGreen font-medium text-lg">Holiday special</p>
+          <p className="text-danger font-medium">see all</p>
+        </div>
+
         <Holiday holArr={holArr} />
       </div>
 
       {/* Reconmends */}
       <div className="mt-10">
-        <p className="text-priGreen font-medium text-lg">Reconmends</p>
+        <div className="flex items-center justify-between">
+          <p className="text-priGreen font-medium text-lg">Reconmends</p>
+          <p className="text-danger font-medium">see all</p>
+        </div>
         <Reconmends recArr={recArr} />
       </div>
 
