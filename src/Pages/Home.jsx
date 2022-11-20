@@ -23,6 +23,7 @@ import holArr from "../Temp/holiday";
 import Reconmends from "../Components/Reconmends";
 import recArr from "../Temp/Reconmends";
 import { useEffect } from "react";
+import peoArr from "../Temp/peoples";
 
 const Home = ({ setLink }) => {
   // to set active link
@@ -201,6 +202,15 @@ const Home = ({ setLink }) => {
           <p className="text-danger font-medium">see all</p>
         </div>
         <Reconmends recArr={recArr} />
+      </div>
+
+      {/* Peoples choice */}
+      <div className="mt-10">
+        <div className="flex items-center justify-between">
+          <p className="text-priGreen font-medium text-lg">People's choice</p>
+          <p className="text-danger font-medium">see all</p>
+        </div>
+        <CardNormal chefArr={peoArr} />
       </div>
 
       {/* The card holder */}
