@@ -2,10 +2,19 @@ import { MdFilterList } from "react-icons/md";
 import { BsArrowUp } from "react-icons/bs";
 import ShopCard from "../Components/ShopCard";
 import shopArr from "../Temp/shop";
+import { useEffect } from "react";
 
-const Shop = () => {
+const Shop = ({ setLink }) => {
+  // to set active link
+  useEffect(() => {
+    const linked = () => {
+      setLink("Shop");
+    };
+    linked();
+  }, [setLink]);
+
   return (
-    <div className="w-screen px-12 relative">
+    <div className="w-screen px-4 md:px-6 lg:px-12 relative">
       {/* title and filter  */}
       <div className="flex items-center justify-between mb-12">
         <div>

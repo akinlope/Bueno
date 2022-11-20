@@ -4,7 +4,6 @@ import { BsHeart } from "react-icons/bs";
 import { FaPlus } from "react-icons/fa";
 
 const CardNormal = ({ chefArr }) => {
-  // console.log(chefArr);
   return (
     <Swiper spaceBetween={50} slidesPerView={"auto"}>
       {chefArr.map(({ id, title, desc, img, price }) => {
@@ -15,14 +14,10 @@ const CardNormal = ({ chefArr }) => {
                 <BsHeart className="text-danger cursor-pointer" />
               </div>
               <div className="relative flex items-center justify-center mt-8 mb-6">
-              <div className="bg-secBlue w-28 h-28 rounded-full blur-lg absolute"></div>
-              <div className="w-32 h-32 rounded-full z-10 bg-danger overflow-hidden -mt-2">
-                <img
-                  src={img}
-                  alt={img}
-                  className="w-32 h-32 object-cover"
-                />
-              </div>
+                <div className="bg-secBlue w-28 h-28 rounded-full blur-lg absolute"></div>
+                <div className="w-32 h-32 rounded-full z-10 bg-danger overflow-hidden -mt-2">
+                  <img src={img} alt={img} className="w-32 h-32 object-cover" />
+                </div>
               </div>
               <p className="text-sm text-priBlack mt-3">{title}</p>
               <p className="text-priGray text-xs mt-2">{desc}</p>

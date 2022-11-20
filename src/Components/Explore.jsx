@@ -1,7 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const Explore = ({ expArr }) => {
-    console.log(expArr);
   return (
     <Swiper spaceBetween={1} slidesPerView={"auto"}>
       {expArr.map(({ id, bgColor, png, title }) => {

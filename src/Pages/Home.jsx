@@ -22,10 +22,19 @@ import Holiday from "../Components/Holiday";
 import holArr from "../Temp/holiday";
 import Reconmends from "../Components/Reconmends";
 import recArr from "../Temp/Reconmends";
+import { useEffect } from "react";
 
-const Home = () => {
+const Home = ({ setLink }) => {
+  // to set active link 
+  useEffect(() => {
+    const linked = () => {
+      setLink("Home");
+    };
+    linked();
+  }, [setLink]);
+
   return (
-    <div className="w-screen px-3 md:px-6 lg:px-12">
+    <div className="w-screen px-4 md:px-6 lg:px-12">
       <div className="flex-col-reverse md:flex-row flex items-center min-h-hero">
         <div className="w-full md:w-6/12">
           <div className="relative">
@@ -45,21 +54,6 @@ const Home = () => {
                 delivery <br /> & easy{" "}
                 <span className="text-priGreen">pickup.</span>
               </p>
-
-              {/* <p className="text-4xl md:text-7xl font-extrabold text-priBlack">
-                Fastest
-              </p>
-              <div className="flex space-x-4">
-                <p className="text-7xl font-extrabold text-priGreen">Food</p>
-                <p className="text-7xl font-extrabold text-priBlack">
-                  {" "}
-                  Delivery
-                </p>
-              </div>
-              <div className="flex space-x-4">
-                <p className="text-7xl font-extrabold text-priBlack">& Easy</p>
-                <p className="text-7xl font-extrabold text-priGreen">Pickup.</p>
-              </div> */}
             </motion.div>
           </div>
 
@@ -159,9 +153,9 @@ const Home = () => {
 
       {/* Chief special  */}
       <div className=" mt-20">
-        <div className="flex bg-priBlack">
-        <p className="text-priGreen font-medium text-lg">Chef's special</p>
-        <p className="text-danger float-right">see all</p>
+        <div className="flex items-center justify-between">
+          <p className="text-priGreen font-medium text-lg">Chef's special</p>
+          <p className="text-danger font-medium">see all</p>
         </div>
         {/* For each section of the Cards */}
         <div className="mt-5 p-0">
@@ -190,7 +184,7 @@ const Home = () => {
       {/* Reconmends */}
       <div className="mt-10">
         <p className="text-priGreen font-medium text-lg">Reconmends</p>
-        <Reconmends recArr={recArr}/>
+        <Reconmends recArr={recArr} />
       </div>
 
       {/* The card holder */}
