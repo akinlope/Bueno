@@ -120,3 +120,31 @@ export const fadeInSpring = {
     },
   }),
 };
+
+export const slideIn = {
+  initial: {
+    x: "-100vw",
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      ease: "easeInOut",
+      duration: 0.5,
+      when: "beforeChildren",
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+export const fadeInTwo = {
+  initial: {
+    opacity: 0,
+    x: -10
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+  },
+};
