@@ -9,7 +9,7 @@ const Reconmends = ({ recArr }) => {
         return (
           <SwiperSlide key={id}>
             <div>
-              <div className="mt-5 p-0">
+              <div className="mt-5">
                 <div className="rounded-xl shadow-3xl w-96 h-40 p-5 mb-4">
                   <div className="flex -mt-2 ">
                     <div className="pt-8 mr-2 ">

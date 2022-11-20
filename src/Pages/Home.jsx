@@ -24,6 +24,7 @@ import Reconmends from "../Components/Reconmends";
 import recArr from "../Temp/Reconmends";
 import { useEffect } from "react";
 import peoArr from "../Temp/peoples";
+import Review from "../Components/Review";
 
 const Home = ({ setLink }) => {
   // to set active link
@@ -213,6 +214,14 @@ const Home = ({ setLink }) => {
         <CardNormal chefArr={peoArr} />
       </div>
 
+      {/* Review */}
+      <div className="mt-10">
+        <div className="flex items-center justify-between">
+          <p className="text-priGreen font-medium text-lg"> Reviews</p>
+          <p className="text-danger font-medium">see all</p>
+        </div>
+        <Review />
+      </div>
       {/* The card holder */}
       {/* <div className=" mt-20">
         <p className="text-priGreen font-medium text-lg">Chef's special</p> */}
