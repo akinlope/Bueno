@@ -1,6 +1,5 @@
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import { Swiper, SwiperSlide } from "swiper/react";
-// import img from "../img/pexels-guilherme-almeida-1858175.jpg"
 
 const Review = ({ revArr }) => {
   console.log(revArr);
