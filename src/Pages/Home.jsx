@@ -26,6 +26,7 @@ import { useEffect } from "react";
 import peoArr from "../Temp/peoples";
 import Review from "../Components/Review";
 import revArr from "../Temp/Review";
+import Footer from "../Components/Footer"
 
 const Home = ({ setLink }) => {
   // to set active link
@@ -219,7 +220,9 @@ const Home = ({ setLink }) => {
         <Review revArr={revArr} />
       </div>
 
-      
+      <div className="mt-10 ">
+        <Footer />
+      </div>
     </div>
   );
 };
