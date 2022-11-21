@@ -11,7 +11,7 @@ const Bestdeals = ({ bestArr }) => {
             <>
               <div className="mt-5 p-0 relative">
                 <div className="rounded-xl shadow-3xl w-56 h-72 p-5 mb-4">
-                  <div className="flex space-x-20">
+                  <div className="flex ">
                     <p className=" text-sm text-secBlack font-semibold">
                       Order {order}
                     </p>
@@ -34,7 +34,7 @@ const Bestdeals = ({ bestArr }) => {
                   <p className="text-priGray text-xs mt-2">
                     {discription}
                   </p>
-                  <div className="mt-5 flex space-x-7">
+                  <div className="mt-5 flex justify-between w-2/3">
                     <span className="text-sm text-danger font-bold line-through">
                       ${oldPrice.toFixed(2)}
                     </span>
@@ -42,8 +42,13 @@ const Bestdeals = ({ bestArr }) => {
                     <span className="text-secBlack font-bold ">
                       ${newPrice.toFixed(2)}
                     </span>
-                    <FaPlus className="float-right text-priGreen  h-5 w-5 cursor-pointer mb-4" />
+                    
                   </div>
+
+                  <div className="p-3 absolute shadow-3xl rounded-full bottom-2 right-8">
+                    <FaPlus className="float-right text-priGreen  cursor-pointer text-lg" />
+
+                    </div>
                 </div>
               </div>
             </>

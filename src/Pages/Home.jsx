@@ -223,28 +223,16 @@ const Home = ({ setLink }) => {
         </div>
         <Review revArr={revArr} />
       </div>
-      {/* The card holder */}
-      {/* <div className=" mt-20">
-        <p className="text-priGreen font-medium text-lg">Chef's special</p> */}
-      {/* For each section of the Cards */}
-      {/* <div className="mt-5 p-0">
-          <CardNormal chefArr={chefArr} />
-        </div>
-        <div className=" mt-10">
-          <p className="text-priGreen font-medium text-lg">Best Deals</p>
-          <Bestdeals bestArr={bestD} />
-        </div>
-        <div className=" mt-10">
-          <p className="text-priGreen font-medium text-lg">
-            Explore Categories
-          </p>
-          <Explore expArr={expArr} />
-        </div>
-        <div className=" mt-10">
-          <p className="text-priGreen font-medium text-lg">Holiday special</p> */}
-      {/* <Explore holArr={holArr}/> */}
-      {/* </div>
-      </div> */}
+
+
+
+      <div className="mt-20 flex justify-center">
+        <p className="text-priGray font-boldn text-sm">Thanks for your patronage</p>
+      </div>
+
+
+
+
     </div>
   );
 };

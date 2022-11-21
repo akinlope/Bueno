@@ -1,6 +1,6 @@
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import { Swiper, SwiperSlide } from "swiper/react";
-// import img from "../img/pexels-guilherme-almeida-1858175.jpg"
+import img from "../img/pexels-guilherme-almeida-1858175.jpg"
 
 const Review = ({ revArr }) => {
   console.log( revArr );
@@ -15,9 +15,9 @@ const Review = ({ revArr }) => {
                 <div className=" w-40 flex justify-center items-center h-56">
                   <img src={img} alt={img} className="w-32 h-32 rounded-full" />
                 </div>
-                <div className="pr-5 pl-5 w-96  ">
-                  <p className="mt-10 font-bold text-secBlack">{name}</p>
-                  <p className="text-sm text-priGray mt-3">{dis}</p>
+                <div className="pr-5 w-96  ">
+                  <p className="mt-10 font-bold text-secBlack">Bola Tayo</p>
+                  <p className="text-sm text-priGray mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, omnis eaque ex ullam voluptates delectus inventore. Amet labore earum modi!</p>
                   <div className="mt-5 flex">
                     <AiFillStar />
                     <AiFillStar />
