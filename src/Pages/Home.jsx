@@ -218,19 +218,8 @@ const Home = ({ setLink }) => {
         </div>
         <Review revArr={revArr} />
       </div>
-<<<<<<< HEAD
 
-
-
-      <div className="mt-20 flex justify-center">
-        <p className="text-priGray font-boldn text-sm">Thanks for your patronage</p>
-      </div>
-
-
-
-
-=======
->>>>>>> 6f8caea4f9541e3fd07de7819cfcce36c926c015
+      
     </div>
   );
 };
