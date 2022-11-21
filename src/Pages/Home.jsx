@@ -156,11 +156,7 @@ const Home = ({ setLink }) => {
 
       {/* Chief special  */}
       <div className=" mt-20">
-        {/* <div className="flex items-center justify-between"> */}
         <p className="text-priGreen font-medium text-lg">Chef's special</p>
-        {/* <p className="text-danger font-medium">see all</p> */}
-        {/* </div> */}
-        {/* For each section of the Cards */}
         <div className="mt-5 p-0">
           <CardNormal chefArr={chefArr} />
         </div>
@@ -172,7 +168,6 @@ const Home = ({ setLink }) => {
           <p className="text-priGreen font-medium text-lg">Best Deals</p>
           <p className="text-danger font-medium ">see all</p>
         </div>
-
         <Bestdeals bestArr={bestD} />
       </div>
 
@@ -216,13 +211,14 @@ const Home = ({ setLink }) => {
       </div>
 
       {/* Review */}
-      <div className="mt-10">
+      <div className="mt-10 review">
         <div className="flex items-center justify-between">
           <p className="text-priGreen font-medium text-lg"> Reviews</p>
           <p className="text-danger font-medium">see all</p>
         </div>
         <Review revArr={revArr} />
       </div>
+<<<<<<< HEAD
 
 
 
@@ -233,6 +229,8 @@ const Home = ({ setLink }) => {
 
 
 
+=======
+>>>>>>> 6f8caea4f9541e3fd07de7819cfcce36c926c015
     </div>
   );
 };
