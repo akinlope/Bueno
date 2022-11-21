@@ -218,6 +218,8 @@ const Home = ({ setLink }) => {
         </div>
         <Review revArr={revArr} />
       </div>
+
+      
     </div>
   );
 };

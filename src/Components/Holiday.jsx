@@ -34,7 +34,7 @@ const Holiday = ({ holArr }) => {
                   <p className="text-priGray text-xs mt-2">
                     Double carne con queso
                   </p>
-                  <div className="mt-4 flex space-x-7">
+                  <div className="mt-4 flex justify-between w-2/3">
                     <span className="text-sm text-danger font-bold line-through">
                       ${oldPrice.toFixed(2)}
                     </span>
@@ -42,7 +42,11 @@ const Holiday = ({ holArr }) => {
                     <span className="text-secBlack font-bold ">
                       ${newPrice.toFixed(2)}
                     </span>
-                    <FaPlus className="float-right text-danger  h-5 w-5 cursor-pointer mb-4" />
+                    
+                  </div>
+
+                  <div className="absolute p-3 rounded-full shadow-3xl bottom-2 right-8">
+                  <FaPlus className="float-right text-danger cursor-pointer text-lg" />
                   </div>
                 </div>
               </div>

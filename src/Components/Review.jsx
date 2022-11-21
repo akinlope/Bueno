@@ -2,7 +2,6 @@ import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const Review = ({ revArr }) => {
-  console.log(revArr);
   return (
     <Swiper spaceBetween={50} slidesPerView={"auto"}>
       {revArr.map(({ id, name, img, dis }) => {

@@ -9,7 +9,7 @@ const CardNormal = ({ chefArr }) => {
       {chefArr.map(({ id, title, desc, img, price }) => {
         return (
           <SwiperSlide key={id}>
-            <div className="rounded-xl shadow-3xl w-56 h-72 p-5 mb-4">
+            <div className="rounded-xl shadow-3xl w-56 h-72 p-5 mb-4 relative">
               <div className="float-right">
                 <BsHeart className="text-danger cursor-pointer" />
               </div>
@@ -25,10 +25,11 @@ const CardNormal = ({ chefArr }) => {
                 <span className="text-secBlack font-bold flex float-left">
                   ${price}
                 </span>
-                <div className=" bg-danger">
-                  <FaPlus className="float-right text-priGreen mr-2 h-5 w-5 cursor-pointer mb-4" />
-                </div>
               </div>
+
+              <div className=" absolute p-3 rounded-full shadow-3xl bottom-4 right-4">
+                    <FaPlus className="float-right text-priGreen  cursor-pointer text-lg " />
+                  </div>
             </div>
           </SwiperSlide>
         );
