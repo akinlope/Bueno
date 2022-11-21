@@ -28,6 +28,7 @@ const Review = ({ revArr }) => {
                 </div>
               </div>
             </div>
+            </>
           </SwiperSlide>
         );
       })}
