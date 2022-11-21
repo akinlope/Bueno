@@ -13,6 +13,28 @@
   width: 15rem !important;
 }
 
+.review .swiper-slide {
+  width: auto !important;
+}
+
+.review .swiper-slide {
+  opacity: 0.6;
+  scale: 0.9;
+}
+
+.review .swiper-slide-active {
+  opacity: 1;
+  scale: 1;
+}
+
+.review .swiper-slide .rounded-3xl {
+  box-shadow: none;
+}
+
+.review .swiper-slide-active .rounded-3xl {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
 .swiper {
   overflow:visible !important;
 }
