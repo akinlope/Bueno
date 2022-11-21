@@ -25,6 +25,7 @@ import recArr from "../Temp/Reconmends";
 import { useEffect } from "react";
 import peoArr from "../Temp/peoples";
 import Review from "../Components/Review";
+import revArr from "../Temp/Review";
 
 const Home = ({ setLink }) => {
   // to set active link
@@ -220,7 +221,7 @@ const Home = ({ setLink }) => {
           <p className="text-priGreen font-medium text-lg"> Reviews</p>
           <p className="text-danger font-medium">see all</p>
         </div>
-        <Review />
+        <Review revArr={revArr} />
       </div>
       {/* The card holder */}
       {/* <div className=" mt-20">
