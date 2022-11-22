@@ -106,10 +106,15 @@ const Footer = () => {
             <p className="text-xl text-priGreen font-medium mb-3">Location</p>
             <div className="w-20"></div>
           </div>
+
+
         </div>
         <p className="text-priGray text-md text-center flex items-center justify-center">
           <AiOutlineCopyrightCircle className="mr-1" /> 2022
         </p>
+
+        <map name="">Google map</map>
+
       </div>
     </div>
   );
