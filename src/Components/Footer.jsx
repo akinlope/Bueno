@@ -76,7 +76,12 @@ const Footer = () => {
           <div>
             
           </div>
+
+
         </div>
+
+        <map name="">Google map</map>
+
       </div>
     </div>
   );
