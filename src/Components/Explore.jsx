@@ -6,17 +6,14 @@ const Explore = ({ expArr }) => {
       {expArr.map(({ id, bgColor, png, title }) => {
         return (
           <SwiperSlide key={id}>
-            <div className="mt-5 p-0">
-              <div>
-                <div className="rounded-xl w-44 h-44 p-5 mb-4" style={{backgroundColor: bgColor}}>
-                  <div className=" flex justify-center items-center mt-2">
-                    <img src={png} alt={png} className="w-24 h-24" />
-                  </div>
-                </div>
-                <div className="flex justify-center w-44 -mt-2 mb-4">
-                  <span className=" text-secBlack font-bold">{title}</span>
-                </div>
+            <div className="mt-5 w-44">
+              <div
+                className="rounded-xl h-44 flex items-center justify-center mb-4"
+                style={{ backgroundColor: bgColor }}
+              >
+                <img src={png} alt={png} className="w-24" />
               </div>
+              <p className=" text-secBlack text-center font-medium capitalize">{title}</p>
             </div>
           </SwiperSlide>
         );
@@ -26,18 +23,3 @@ const Explore = ({ expArr }) => {
 };
 
 export default Explore;
-
-// return (
-//     <div className="mt-5 p-0">
-//       <div>
-//         <div className="rounded-xl bg-priBlue w-44 h-44 p-5 mb-4">
-//           <div className=" flex justify-center mt-2">
-//             <img src={burgerpng} alt={burgerpng} className="w-24" />
-//           </div>
-//         </div>
-//         <div className="flex justify-center w-44 -mt-2">
-//           <span className=" text-secBlack font-bold">Burger</span>
-//         </div>
-//       </div>
-//     </div>
-//   );

@@ -7,7 +7,7 @@ const chefArr = [
     {
       id: 1,
       img: hotSpicy,
-      title: "Thunder Spicy burger",
+      title: "Thunder spicy burger",
       desc: "Double carne con queso",
       price: 12.58,
     },
@@ -35,7 +35,7 @@ const chefArr = [
     {
       id: 5,
       img: hotSpicy,
-      title: "Thunder Spicy burger",
+      title: "Thunder spicy burger",
       desc: "Double carne con queso",
       price: 12.58,
     },

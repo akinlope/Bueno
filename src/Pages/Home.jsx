@@ -18,15 +18,13 @@ import {
   slideAcross,
 } from "../variants";
 import expArr from "../Temp/explore";
-import Holiday from "../Components/Holiday";
-import holArr from "../Temp/holiday";
-import Reconmends from "../Components/Reconmends";
+import Recommends from "../Components/Recommends";
 import recArr from "../Temp/Reconmends";
 import { useEffect } from "react";
 import peoArr from "../Temp/peoples";
 import Review from "../Components/Review";
 import revArr from "../Temp/Review";
-import Footer from "../Components/Footer"
+import { Link } from "react-router-dom";
 
 const Home = ({ setLink }) => {
   // to set active link
@@ -40,6 +38,7 @@ const Home = ({ setLink }) => {
   return (
     <div className="w-screen px-4 md:px-6 lg:px-12">
       <div className="flex-col-reverse md:flex-row flex items-center min-h-hero">
+        {/* left div  */}
         <div className="w-full md:w-6/12">
           <div className="relative">
             <motion.div
@@ -90,7 +89,8 @@ const Home = ({ setLink }) => {
           </motion.div>
         </div>
 
-        <div className="w-full pt-10 mb-10 flex justify-center items-center relative md:w-6/12 md:pt-0 md:mb-0">
+        {/* right div  */}
+        <div className="w-full plate pt-10 mb-10 flex justify-center items-center relative md:w-6/12 md:pt-0 md:mb-0">
           <motion.div
             className="max-w-xs md:h-72 lg:h-96 md:w-auto md:max-w-none relative md:pl-10"
             variants={plateVariant}
@@ -99,7 +99,7 @@ const Home = ({ setLink }) => {
           >
             <motion.img
               src={greenPlate}
-              className="h-full"
+              className="md:h-full"
               alt="plate"
               variants={rotatePlate}
             />
@@ -157,7 +157,7 @@ const Home = ({ setLink }) => {
 
       {/* Chief special  */}
       <div className=" mt-20">
-        <p className="text-priGreen font-medium text-lg">Chef's special</p>
+        <p className="text-priGreen font-medium text-md md:text-lg">Chef's special</p>
         <div className="mt-5 p-0">
           <CardNormal chefArr={chefArr} />
         </div>
@@ -166,19 +166,19 @@ const Home = ({ setLink }) => {
       {/* Best deal  */}
       <div className=" mt-10">
         <div className="flex items-center justify-between">
-          <p className="text-priGreen font-medium text-lg">Best Deals</p>
-          <p className="text-danger font-medium ">see all</p>
+          <p className="text-priGreen font-medium text-md md:text-lg">Best Deals</p>
+          <Link to={'/best-deals'} className="text-danger font-medium ">see all</Link>
         </div>
-        <Bestdeals bestArr={bestD} />
+        <Bestdeals bestArr={bestD} occasion={'bestDeal'} />
       </div>
 
       {/* Explore categories  */}
       <div className=" mt-10">
         <div className="flex items-center justify-between">
-          <p className="text-priGreen font-medium text-lg">
+          <p className="text-priGreen font-medium text-md md:text-lg">
             Explore Categories
           </p>
-          <p className="text-danger font-medium">see all</p>
+          <Link to={'/categories'} className="text-danger font-medium ">see all</Link>
         </div>
         <Explore expArr={expArr} />
       </div>
@@ -186,20 +186,19 @@ const Home = ({ setLink }) => {
       {/* Holiday special */}
       <div className=" mt-10">
         <div className="flex items-center justify-between">
-          <p className="text-priGreen font-medium text-lg">Holiday special</p>
-          <p className="text-danger font-medium">see all</p>
+          <p className="text-priGreen font-medium text-md md:text-lg">Holiday special</p>
+          <Link to={'/holiday-special'} className="text-danger font-medium ">see all</Link>
         </div>
-
-        <Holiday holArr={holArr} />
+        <Bestdeals bestArr={bestD} occasion={'holiday'} />
       </div>
 
-      {/* Reconmends */}
-      <div className="mt-10">
+      {/* Recommends */}
+      <div className="mt-10 recommend">
         <div className="flex items-center justify-between">
-          <p className="text-priGreen font-medium text-lg">Reconmends</p>
-          <p className="text-danger font-medium">see all</p>
+          <p className="text-priGreen font-medium text-lg">Recommends</p>
+          <Link to={'/recommends'} className="text-danger font-medium ">see all</Link>
         </div>
-        <Reconmends recArr={recArr} />
+        <Recommends recArr={recArr} />
       </div>
 
       {/* Peoples choice */}
@@ -218,10 +217,6 @@ const Home = ({ setLink }) => {
           <p className="text-danger font-medium">see all</p>
         </div>
         <Review revArr={revArr} />
-      </div>
-
-      <div className="mt-10 ">
-        <Footer />
       </div>
     </div>
   );

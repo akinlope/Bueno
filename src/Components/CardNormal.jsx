@@ -19,7 +19,7 @@ const CardNormal = ({ chefArr }) => {
                   <img src={img} alt={img} className="w-32 h-32 object-cover" />
                 </div>
               </div>
-              <p className="text-sm text-priBlack mt-3">{title}</p>
+              <p className="text-sm text-priBlack mt-3 font-medium">{title}</p>
               <p className="text-priGray text-xs mt-2">{desc}</p>
               <div className="mt-2">
                 <span className="text-secBlack font-bold flex float-left">

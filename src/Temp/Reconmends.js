@@ -5,49 +5,49 @@ const recArr = [
     {
         id: 1,
         pic: burger,
-        group: "VEGAN",
+        group: "not vegan",
         title: "Thunder spicy burger",
-        discription: "Doble carne con queso",
+        description: "Doble carne con queso",
         price: 12.58
     },
     {
         id: 2,
         pic: vege,
-        group: "VEGETARIAN",
+        group: "vegan",
         title: "Salad",
-        discription: "Doble carne con queso",
+        description: "Doble carne con queso",
         price: 12.58
     },
     {
         id: 3,
         pic: burger,
-        group: "VEGAN",
+        group: "not vegan",
         title: "Thunder spicy burger",
-        discription: "Doble carne con queso",
+        description: "Doble carne con queso",
         price: 12.58
     },
     {
         id: 4,
         pic: vege,
-        group: "VEGETARIAN",
+        group: "vegan",
         title: "Salad",
-        discription: "Doble carne con queso",
+        description: "Doble carne con queso",
         price: 12.58
     },
     {
         id: 5,
         pic: burger,
-        group: "VEGAN",
+        group: "not vegan",
         title: "Thunder spicy burger",
-        discription: "Doble carne con queso",
+        description: "Doble carne con queso",
         price: 12.58
     },
     {
         id: 6,
         pic: vege,
-        group: "VEGETARIAN",
+        group: "vegan",
         title: "Salad",
-        discription: "Doble carne con queso",
+        description: "Doble carne con queso",
         price: 12.58
     }
 ]

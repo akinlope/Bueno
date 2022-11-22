@@ -4,13 +4,14 @@ import Menu from "./Pages/Menu";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Shop from "./Pages/Shop";
 import { useState } from "react";
+import Footer from "./Components/Footer";
 
 function App() {
-  const [activeLink, setActiveLink] = useState('')
+  const [activeLink, setActiveLink] = useState("");
   const linkFun = (params) => {
     setActiveLink(params);
   };
-  
+
   return (
     <Router>
       <Navbar activeLink={activeLink} />
@@ -19,6 +20,7 @@ function App() {
         <Route exact path="/menu" element={<Menu setLink={linkFun} />} />
         <Route exact path="/shop" element={<Shop setLink={linkFun} />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
