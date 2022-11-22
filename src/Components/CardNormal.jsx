@@ -1,5 +1,4 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
 import { BsHeart } from "react-icons/bs";
 import { FaPlus } from "react-icons/fa";
 

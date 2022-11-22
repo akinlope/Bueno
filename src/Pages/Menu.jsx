@@ -5,6 +5,7 @@ import Menus from "../Components/Menus";
 import { motion } from "framer-motion";
 import { fadeInSpring, fadeInUpDown } from "../variants";
 import { useEffect } from "react";
+import BottomText from "../Components/BottomText";
 
 const plateArr = [
   {
@@ -29,13 +30,13 @@ const plateArr = [
 ];
 
 const Menu = ({ setLink }) => {
- // to set active link 
- useEffect(() => {
-  const linked = () => {
-    setLink("Menu");
-  };
-  linked();
-}, [setLink]);
+  // to set active link
+  useEffect(() => {
+    const linked = () => {
+      setLink("Menu");
+    };
+    linked();
+  }, [setLink]);
 
   return (
     <div className="w-screen px-4 md:px-6 lg:px-12">
@@ -82,11 +83,7 @@ const Menu = ({ setLink }) => {
       <Menus />
 
       {/* bottom text  */}
-      <div className="text-center mb-12">
-        <p className="capitalize text-priBrown opacity-60">
-          your choice. your order. our service
-        </p>
-      </div>
+      <BottomText text={"your choice. your order. our service"} />
     </div>
   );
 };

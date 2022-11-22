@@ -1,14 +1,23 @@
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper";
 
 const Review = ({ revArr }) => {
   return (
-    <Swiper spaceBetween={50} slidesPerView={"auto"}>
+    <Swiper
+      spaceBetween={50}
+      slidesPerView={"auto"}
+      autoplay={{
+        delay: 3000,
+        disableOnInteraction: false,
+      }}
+      modules={[Autoplay]}
+    >
       {revArr.map(({ id, name, img, dis }) => {
         return (
           <SwiperSlide key={id}>
             <div className="mt-5 px-12 rounded-3xl shadow-3xl flex items-center h-72">
-              <div className="bg-danger rounded-full overflow-hidden mr-20">
+              <div className="rounded-full overflow-hidden mr-20">
                 <img src={img} alt={img} className="w-32 h-32 object-cover" />
               </div>
               <div className="">

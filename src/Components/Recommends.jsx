@@ -8,11 +8,11 @@ const Recommends = ({ recArr }) => {
       {recArr.map(({ id, pic, group, title, description, price }) => {
         return (
           <SwiperSlide key={id}>
-            <div className="rounded-xl h-56 shadow-3xl mb-4 mt-5 relative flex items-center justify-center">
+            <div className="rounded-3xl h-56 shadow-3xl mb-4 mt-5 relative flex items-center justify-center">
               <div className="mr-10 w-24 h-24 bg-danger rounded-full overflow-hidden">
                 <img src={pic} alt={pic} className="w-24 h-24 object-cover" />
               </div>
-              <div className="">
+              <div className="w-72">
                 <div className="flex items-center justify-between">
                   <p className="text-priGray text-md font-semibold opacity-40 uppercase">
                     {group}
@@ -26,7 +26,7 @@ const Recommends = ({ recArr }) => {
                 <p className="text-priBlack font-bold text-3xl">
                   ${price.toFixed(2)}
                 </p>
-                <div className="cursor-pointer absolute p-3 rounded-full shadow-3xl bottom-5 right-5">
+                <div className="cursor-pointer absolute p-3 rounded-full shadow-3xl bottom-5 right-8">
                   <FaPlus className="text-priGreen" />
                 </div>
               </div>

@@ -25,6 +25,8 @@ import peoArr from "../Temp/peoples";
 import Review from "../Components/Review";
 import revArr from "../Temp/Review";
 import { Link } from "react-router-dom";
+import "swiper/css";
+import BottomText from "../Components/BottomText";
 
 const Home = ({ setLink }) => {
   // to set active link
@@ -157,19 +159,23 @@ const Home = ({ setLink }) => {
 
       {/* Chief special  */}
       <div className=" mt-20">
-        <p className="text-priGreen font-medium text-md md:text-lg">Chef's special</p>
-        <div className="mt-5 p-0">
-          <CardNormal chefArr={chefArr} />
-        </div>
+        <p className="text-priGreen font-medium text-md md:text-lg mb-5">
+          Chef's special
+        </p>
+        <CardNormal chefArr={chefArr} />
       </div>
 
       {/* Best deal  */}
       <div className=" mt-10">
         <div className="flex items-center justify-between">
-          <p className="text-priGreen font-medium text-md md:text-lg">Best Deals</p>
-          <Link to={'/best-deals'} className="text-danger font-medium ">see all</Link>
+          <p className="text-priGreen font-medium text-md md:text-lg">
+            Best Deals
+          </p>
+          <Link to={"/best-deals"} className="text-danger font-medium ">
+            see all
+          </Link>
         </div>
-        <Bestdeals bestArr={bestD} occasion={'bestDeal'} />
+        <Bestdeals bestArr={bestD} occasion={"bestDeal"} />
       </div>
 
       {/* Explore categories  */}
@@ -178,7 +184,9 @@ const Home = ({ setLink }) => {
           <p className="text-priGreen font-medium text-md md:text-lg">
             Explore Categories
           </p>
-          <Link to={'/categories'} className="text-danger font-medium ">see all</Link>
+          <Link to={"/categories"} className="text-danger font-medium ">
+            see all
+          </Link>
         </div>
         <Explore expArr={expArr} />
       </div>
@@ -186,38 +194,53 @@ const Home = ({ setLink }) => {
       {/* Holiday special */}
       <div className=" mt-10">
         <div className="flex items-center justify-between">
-          <p className="text-priGreen font-medium text-md md:text-lg">Holiday special</p>
-          <Link to={'/holiday-special'} className="text-danger font-medium ">see all</Link>
+          <p className="text-priGreen font-medium text-md md:text-lg">
+            Holiday special
+          </p>
+          <Link to={"/holiday-special"} className="text-danger font-medium ">
+            see all
+          </Link>
         </div>
-        <Bestdeals bestArr={bestD} occasion={'holiday'} />
+        <Bestdeals bestArr={bestD} occasion={"holiday"} />
       </div>
 
       {/* Recommends */}
       <div className="mt-10 recommend">
         <div className="flex items-center justify-between">
-          <p className="text-priGreen font-medium text-lg">Recommends</p>
-          <Link to={'/recommends'} className="text-danger font-medium ">see all</Link>
+          <p className="text-priGreen font-medium text-md md:text-lg">
+            Recommends
+          </p>
+          <Link to={"/recommends"} className="text-danger font-medium ">
+            see all
+          </Link>
         </div>
         <Recommends recArr={recArr} />
       </div>
 
       {/* Peoples choice */}
       <div className="mt-10">
-        <div className="flex items-center justify-between">
-          <p className="text-priGreen font-medium text-lg">People's choice</p>
-          <p className="text-danger font-medium">see all</p>
-        </div>
+        <p className="text-priGreen font-medium text-md md:text-lg mb-5">
+          People's choice
+        </p>
         <CardNormal chefArr={peoArr} />
       </div>
 
       {/* Review */}
       <div className="mt-10 review">
         <div className="flex items-center justify-between">
-          <p className="text-priGreen font-medium text-lg"> Reviews</p>
-          <p className="text-danger font-medium">see all</p>
+          <p className="text-priGreen font-medium text-md md:text-lg">
+            {" "}
+            Reviews
+          </p>
+          <Link to={"/reviews"} className="text-danger font-medium ">
+            see all
+          </Link>
         </div>
         <Review revArr={revArr} />
       </div>
+
+      {/* bottom text  */}
+      <BottomText text={"thanks for your patronage"} />
     </div>
   );
 };
