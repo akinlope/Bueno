@@ -1,5 +1,4 @@
 import { MdFilterList } from "react-icons/md";
-import { BsArrowUp } from "react-icons/bs";
 import ShopCard from "../Components/ShopCard";
 import shopArr from "../Temp/shop";
 import { useEffect } from "react";
@@ -56,9 +55,7 @@ const Shop = ({ setLink }) => {
       </p>
 
       {/* scroll to top  */}
-      <div className="rounded-full bg-priGreen text-center p-3 fixed right-12 z-10 bottom-10 cursor-pointer">
-        <BsArrowUp className="text-pureWhite" />
-      </div>
+      
     </div>
   );
 };

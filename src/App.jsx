@@ -4,7 +4,7 @@ import Menu from "./Pages/Menu";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Shop from "./Pages/Shop";
 import { useState } from "react";
-import Footer from "./Components/Footer";
+import Footer from "./Footer";
 
 function App() {
   const [activeLink, setActiveLink] = useState("");
