@@ -27,7 +27,6 @@ import revArr from "../Temp/Review";
 import { Link } from "react-router-dom";
 import "swiper/css";
 import BottomText from "../Components/BottomText";
-import ScrollToTop from "../Components/ScrollToTop";
 
 const Home = ({ setLink }) => {
   // to set active link
@@ -39,7 +38,7 @@ const Home = ({ setLink }) => {
   }, [setLink]);
 
   return (
-    <div className="w-screen px-4 md:px-6 lg:px-12 relative">
+    <div className="w-screen px-4 md:px-6 lg:px-12">
       <div className="flex-col-reverse md:flex-row flex items-center min-h-hero">
         {/* left div  */}
         <div className="w-full md:w-6/12">
@@ -242,9 +241,6 @@ const Home = ({ setLink }) => {
 
       {/* bottom text  */}
       <BottomText text={"thanks for your patronage"} />
-
-      {/* scroll to top  */}
-      <ScrollToTop />
     </div>
   );
 };

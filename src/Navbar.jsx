@@ -2,9 +2,9 @@ import logo from "./img/logo.png";
 import { BsSearch } from "react-icons/bs";
 import { MdClose, MdOutlineShoppingCart } from "react-icons/md";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
-import { useState } from "react";
-import { motion } from "framer-motion";
-import { fadeInTwo, navVariants, slideIn } from "./variants";
+import { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { fadeInTwo, fadeInUpDown, navVariants, slideIn } from "./variants";
 import Nav from "./Components/Nav";
 
 const navArr = [
@@ -43,14 +43,45 @@ const navArr = [
 
 const Navbar = ({ activeLink }) => {
   const [closeNav, setCloseNav] = useState(false);
+  const [fixedNav, setFixedNav] = useState(false);
+
+  useEffect(() => {
+    const tf = () => {
+      window.onscroll = () => {
+        console.log("Hello");
+        // console.log(window.screenY);
+        // if (window.scrollY >= 400) {
+        //   setShow('Hola');
+        // } else {
+        //   setShow('Hmm');
+        // }
+      };
+    };
+    tf();
+
+    // window.onscroll = () => {
+    //   if (window.scrollY >= 400) {
+    //     setShow(true);
+    //   } else {
+    //     setShow(false);
+    //   }
+    // };
+  }, []);
+
+  // console.log(show);
 
   const handleNav = () => {
     setCloseNav(!closeNav);
   };
 
   return (
+    // <AnimatePresence>
+    // <motion.div
+    //   variants={fadeInUpDown("down")}
+    //   animate={show ? "animate" : ""}
+    // >
     <motion.nav
-      className="px-4 md:px-6 lg:px-12 py-6 w-screen relative"
+      className={`px-4 md:px-6 lg:px-12 py-6 w-screen `}
       variants={navVariants}
       initial="initial"
       animate="animate"
@@ -135,6 +166,8 @@ const Navbar = ({ activeLink }) => {
         </div>
       </div>
     </motion.nav>
+    // </motion.div>
+    // </AnimatePresence>
   );
 };
 

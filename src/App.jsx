@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Shop from "./Pages/Shop";
 import { useState } from "react";
 import Footer from "./Footer";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
   const [activeLink, setActiveLink] = useState("");
@@ -21,6 +22,7 @@ function App() {
         <Route exact path="/shop" element={<Shop setLink={linkFun} />} />
       </Routes>
       <Footer />
+      <ScrollToTop />
     </Router>
   );
 }
