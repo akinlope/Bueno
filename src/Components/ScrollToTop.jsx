@@ -8,17 +8,18 @@ const ScrollToTop = () => {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    window.onscroll = () => {
-      console.log(window.screenY);
-      if (window.scrollY >= 400) {
+    const handleScroll = () => {
+      if (window.scrollY > 400) {
         setShow(true);
       } else {
-        setShow(false);
+        setShow(false)
       }
     };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
-
-  // console.log(show);
 
   const handleClick = () => {
     window.scrollTo({
@@ -28,22 +29,20 @@ const ScrollToTop = () => {
   };
 
   return (
-    <>
-    </>
-    // <AnimatePresence>
-    //   {/* {show && (
-    //     <motion.div
-    //       className="rounded-full bg-priGreen text-center p-3 fixed right-12 z-10 bottom-10 cursor-pointer"
-    //       onClick={handleClick}
-    //       variants={fadeInUpDown('up')}
-    //       initial="initial"
-    //       animate="animate"
-    //       exit={"initial"}
-    //     >
-    //       <BsArrowUp className="text-pureWhite" />
-    //     </motion.div>
-    //   )} */}
-    // </AnimatePresence>
+    <AnimatePresence>
+      {show && (
+        <motion.div
+          className="rounded-full bg-priGreen text-center p-3 fixed right-12 z-10 bottom-10 cursor-pointer"
+          onClick={handleClick}
+          variants={fadeInUpDown("up")}
+          initial="initial"
+          animate="animate"
+          exit={"initial"}
+        >
+          <BsArrowUp className="text-pureWhite" />
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 };
 
